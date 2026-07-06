@@ -1,20 +1,23 @@
 # CLAUDE.md
 
-바로 실행되는 데이터분석 레시피 플레이북. 이 파일은 AI 에이전트로 레시피를 추가·수정할 때의 컨벤션이다.
+Product analytics playbook — runnable recipes, theory guides, and real-service case studies. Conventions for AI-assisted contributions:
 
-## 레시피 컨벤션
-- 폴더 구조: `README.md + analysis.py + requirements.txt(버전 고정) + data/(1MB 미만) + assets/(결과 PNG)`
-- README 흐름: 개요 → 데이터 출처(재현 방법 포함) → 기술 스택 → 실행 방법 → 분석 단계 → 결과(이미지 임베드) → 해석 포인트 → 한계와 확장 → 참조
-- 본문 한국어, 헤더는 영어+한국어 병기
-- Python 환경은 `uv` 사용: `uv venv .venv && uv pip install -r requirements.txt`
-- **머지 기준은 하나: 클론 직후 실행이 되는가.** 레시피를 추가·수정하면 반드시 실제 실행해 assets/ 차트가 재생성되는지 확인한 뒤 커밋한다
+## Recipe conventions
+- Folder shape: `README.md + analysis.py + requirements.txt (pinned) + data/ (<1MB) + assets/ (output PNGs)`
+- README flow: overview → data (with reproduction path) → stack → how to run → analysis steps → results (embedded images) → interpretation → limitations → references
+- English only. Python env via `uv`: `uv venv .venv && uv pip install -r requirements.txt`
+- **The merge bar is one question: does it run right after cloning?** Any change to a recipe requires actually rerunning it and regenerating assets/ before commit
 
-## 데이터 규칙
-- 실측 데이터만. 조작·추정·플레이스홀더 금지
-- 커밋되는 데이터는 레시피당 1MB 미만 — 초과분은 fetch 스크립트 + 출처 링크로 재현 경로 제공
-- 개인정보·실명이 포함된 데이터 커밋 금지
-- 합성 데이터는 시드 고정으로 재현성 보장
+## Case-study rules
+- Real deployed services only. Publish aggregates, or event-level tables ONLY when fully anonymized (P-code identities via one-way hash; no links, free text, emails, or raw IDs) — never anything joinable back to a person
+- Anonymize people as P01… codes; never commit a mapping back to identities
+- State limitations honestly (sample size, time window, significance)
 
-## 링크 규칙
-- 외부 링크는 추가 전 생존 확인 (curl 200)
-- 새 레시피를 추가하면 루트 README의 해당 표에 행 추가
+## Data rules
+- Measured data only — no fabrication, estimation, or placeholders
+- Synthetic data must be seed-pinned for reproducibility
+- Committed data <1MB per recipe; larger via fetch script + source link
+
+## Link rules
+- Verify external links (curl 200) before adding
+- New recipe/case study → add a row to the root README table
