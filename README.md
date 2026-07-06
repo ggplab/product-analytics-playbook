@@ -21,8 +21,10 @@
 | # | 레시피 | 도메인 | 스택 |
 |---|--------|--------|------|
 | 1 | [Cohort Retention Analysis](01-recipes/product-analytics/cohort-retention/) — 코호트 리텐션 분석 | Product Analytics | pandas · SQL |
+| 2 | [Statistics Essentials](01-recipes/statistics/) — 실무자를 위한 통계분석 이론 (기술통계 → 가설검정 → 인과추론) | Statistics | 이론 가이드 |
+| 3 | [ML Fundamentals](01-recipes/machine-learning/) — 머신러닝 기초 개념 (전처리 → 분류 → 회귀 → 군집) | Machine Learning | 이론 가이드 |
 
-**Coming soon**: Funnel Analysis, A/B Test 판정, Weekly Active 지표 설계 (Product Analytics) · 차트 고르기 가이드 (Visualization) · 가설검정 최소한만 (Statistics)
+**Coming soon**: Funnel Analysis, A/B Test 판정, Weekly Active 지표 설계 (Product Analytics) · 차트 고르기 가이드 (Visualization)
 
 ## 🔬 Case Studies — 실데이터 엔드투엔드
 
@@ -33,12 +35,24 @@
 | 1 | [Seoul Apartment Trends](02-case-studies/seoul-apt-trends/) — 서울 아파트 실거래 분석 | 국토부 실거래가 API | 내 집 마련 전에 데이터부터 |
 | 2 | [Equipment Sensor Analysis](02-case-studies/equipment-sensor-analysis/) — 장비 센서 이상탐지 | 공공 센서 데이터 | ML 없이 groupby만으로 하는 이상탐지 |
 
+## 🖼 Analysis Gallery — 실전 프로젝트 갤러리
+
+지난 3년 멘토링·심사에서 나온 실전 분석 49건을 익명화해 정리했습니다. "잘 만든 분석은 어떤 구조인가"를 실제 사례로 보는 섹션입니다.
+
+| 문서 | 내용 |
+|------|------|
+| [Analysis Gallery](03-analysis-gallery/) | 심층 카드 17건 (질문→접근→핵심 결과→배울 점, 수치 실측 발췌) + 주제 아이디어 뱅크 32건 |
+
 ## 🗺 Roadmap
 
 - [x] 데이터 수집처 가이드
 - [x] 첫 레시피 3종 (코호트 리텐션 · 아파트 실거래 · 센서 이상탐지)
+- [x] 통계·ML 이론 가이드
+- [x] 실전 프로젝트 갤러리 (심층 카드 17 + 아이디어 뱅크 32)
 - [ ] Product Analytics 레시피 확장 — 퍼널, A/B 테스트, 지표 설계
-- [ ] Visualization / Statistics / ML 섹션 채우기
+- [ ] Age of Steam 웹 보드게임 유저 분석 케이스스터디 (자체 서비스 실측 데이터)
+- [ ] 공정·엔지니어링 심층 카드 (반도체·페니실린·수질 등)
+- [ ] Visualization 섹션 채우기
 - [ ] 도메인별 하위집합 — 커머스 분석, 콘텐츠 서비스 분석, 헬스케어 분석
 - [ ] 레시피의 Claude Code 스킬/플러그인화 — 폴더째 떼어 플러그인으로
 
