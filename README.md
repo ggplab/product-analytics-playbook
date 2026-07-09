@@ -27,6 +27,7 @@ Clone, run, swap in your data.
 | Recipe | Stack | What it does |
 |--------|-------|--------------|
 | [Cohort Retention](recipes/cohort-retention/) | pandas · SQL | Build a retention matrix + heatmap two ways, with a hidden-pattern exercise |
+| [Threads Engagement](recipes/threads-engagement/) | pandas · matplotlib | Read a content account like a product — why engagement rate misranks your best post. Runs on synthetic data, or [connect your own Threads/Meta account](recipes/threads-engagement/connect-meta.md) |
 
 **Coming soon**: Funnel analysis · A/B test evaluation · Instrumentation starter kit
 
@@ -49,6 +50,7 @@ Bonus: [Analytics without Google Analytics](case-studies/board-game-webapp/instr
 
 - [x] Theory guides 01–06
 - [x] Cohort retention recipe (pandas + SQL, cross-validated)
+- [x] Threads engagement recipe (social API connector + the engagement-rate trap)
 - [x] Two real-service case studies
 - [ ] Funnel analysis recipe
 - [ ] A/B test evaluation recipe (with sample-size calculator)
