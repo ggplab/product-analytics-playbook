@@ -67,7 +67,7 @@ GVIZ_URL = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:j
 # hashing. If this path doesn't exist (true for anyone outside the original
 # organizer's machine), the script falls back to --cached automatically.
 EXTERNAL_ROSTER_PATH = os.path.expanduser(
-    "~/Projects/content-designer-challenge/web/members.json"
+    "~/Projects/biz-operation/content-designer-challenge/web/members.json"
 )
 
 CHALLENGE_START = date(2026, 3, 2)
