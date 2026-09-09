@@ -28,8 +28,9 @@ Clone, run, swap in your data.
 |--------|-------|--------------|
 | [Cohort Retention](recipes/cohort-retention/) | pandas · SQL | Build a retention matrix + heatmap two ways, with a hidden-pattern exercise |
 | [Threads Engagement](recipes/threads-engagement/) | pandas · matplotlib | Read a content account like a product — why engagement rate misranks your best post. Runs on synthetic data, or [connect your own Threads/Meta account](recipes/threads-engagement/connect-meta.md) |
+| [Weekly Funnel](recipes/funnel-weekly/) | raw JSONL · matplotlib | Did the thing you shipped work? Rebuild a funnel from a raw event log four times — the blended weekly number says no, both device segments say yes |
 
-**Coming soon**: Funnel analysis · A/B test evaluation · Instrumentation starter kit
+**Coming soon**: A/B test evaluation · Instrumentation starter kit
 
 ## 🔬 Case Studies — Real Apps, Real Numbers
 
@@ -51,9 +52,10 @@ Bonus: [Analytics without Google Analytics](case-studies/board-game-webapp/instr
 - [x] Theory guides 01–06
 - [x] Cohort retention recipe (pandas + SQL, cross-validated)
 - [x] Threads engagement recipe (social API connector + the engagement-rate trap)
+- [x] Weekly cohort funnel recipe (internal-actor exclusion, conversion windows, a mix-shift reversal)
 - [x] Two real-service case studies
-- [ ] Funnel analysis recipe
 - [ ] A/B test evaluation recipe (with sample-size calculator)
+- [ ] Measurement-definition guide — pinning down what a baseline number meant before comparing to it
 - [ ] Instrumentation starter kit (drop-in, no-SDK event logging)
 - [ ] Claude Code plugin packaging — each recipe as an installable skill
 

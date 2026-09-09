@@ -122,7 +122,7 @@ The pattern: smaller baseline rates and smaller effect sizes both demand dramati
 
 **When you'd actually use this**: before running an A/B test on a funnel step, estimate the sample size you'll need for the effect size you actually care about — if your traffic won't get you there in a reasonable time, either pick a higher-leverage step (more users, bigger expected effect) or don't treat the result as conclusive. For a deeper, worked-through walk on why teams reach for A/B tests on funnel steps and where that reasoning goes wrong, see the author's write-up: [snowgot.tistory.com/168](https://snowgot.tistory.com/168) (Korean).
 
-For real funnels analyzed end-to-end with actual data, see `../case-studies/`.
+For a runnable version of everything above — conversion windows, cohort bucketing, and segment comparison applied to a raw event log, where skipping them would have got the decision wrong — see [`../recipes/funnel-weekly/`](../recipes/funnel-weekly/). For real funnels analyzed end-to-end with actual data, see `../case-studies/`.
 
 ## Further reading
 
