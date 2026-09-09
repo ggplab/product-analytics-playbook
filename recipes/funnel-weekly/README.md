@@ -179,10 +179,10 @@ The general shape: any small group of unrepresentative users first seen in one p
 
 - **Device is attributed from the first visit** and treated as fixed. Real visitors switch — read something on a phone, come back on a laptop — and a serious version of this analysis has to decide whether the segment key is the first visit, the converting session, or the modal device, and say which.
 - **Cohorts that straddle the ship date are contaminated.** A visitor whose first week was pre-ship but who returns and signs up post-ship is counted in a "before" cohort while receiving the treatment. The effect here is small (return gaps cap at 16 days) but it biases the measured lift downward. A cleaner design assigns treatment at the signup event and reports it as its own axis.
-- **This is not an A/B test.** Before/after comparison across a period where the traffic mix also changed cannot isolate the tooltips' causal effect — the whole recipe is a demonstration of that. For the version that can, see [`theory/04-ab-testing.md`](../../theory/04-ab-testing.md).
+- **This is not an A/B test.** Before/after comparison across a period where the traffic mix also changed cannot isolate the tooltips' causal effect — the whole recipe is a demonstration of that. For the version that can, see [`theory/04-ab-testing.md`](../../theory/04-ab-testing.md) and the runnable [A/B Test Evaluation recipe](../ab-test-eval/), which runs this same change as a randomized experiment.
 - **`norecord` is unmodelled loss.** 5–19% of step-1 exits have no exit event, and there's no way to know whether those users resemble the ones who did fire an event.
 - **Weekly cells are small.** 11–83 signups per device-week means roughly ±5–15pp of sampling noise on each point. That's why every conclusion here is drawn from pooled before/after cells, not individual weeks.
-- Natural follow-up: **A/B test evaluation** — running this properly as an experiment instead of a before/after. The definition choices this recipe walks through are generalized in [`theory/07-metric-definitions.md`](../../theory/07-metric-definitions.md).
+- The definition choices this recipe walks through are generalized in [`theory/07-metric-definitions.md`](../../theory/07-metric-definitions.md).
 
 ## References
 

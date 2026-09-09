@@ -43,7 +43,7 @@ n ≈ (Z_α/2 + Z_β)² · [p1(1-p1) + p2(1-p2)] / (p1 - p2)²
 
 with `Z_α/2 = 1.96` (95% confidence) and `Z_β = 0.84` (80% power), plugging in `p1 = 0.05` and `p2 = 0.07` gives roughly **2,200 users per arm** (about 4,400 total) before you can trust the result either way. If your product gets 200 signups a week, that's several months of test — worth knowing on day one, not week six when you're staring at a still-inconclusive dashboard.
 
-You don't need to hand-derive this every time — tools like Evan Miller's sample size calculator do the arithmetic for you. The point isn't the formula; it's the habit of computing a required N (and therefore a rough test duration) *before* you launch the test. See [05-statistics-for-pa.md](05-statistics-for-pa.md) for the standard error and confidence interval mechanics this formula rests on.
+You don't need to hand-derive this every time — tools like Evan Miller's sample size calculator do the arithmetic for you, and [`../recipes/ab-test-eval/`](../recipes/ab-test-eval/) ships a runnable version that reproduces this exact 2,200 figure. The point isn't the formula; it's the habit of computing a required N (and therefore a rough test duration) *before* you launch the test. See [05-statistics-for-pa.md](05-statistics-for-pa.md) for the standard error and confidence interval mechanics this formula rests on.
 
 **When you'd actually use this**: before launching any test, write down your baseline rate, the minimum lift worth caring about, and the resulting sample size / duration. If the duration is longer than you're willing to wait, you either need more traffic, a bigger expected effect, or a different validation method (see the last section).
 
@@ -62,7 +62,7 @@ A few traps worth memorizing, because each one gets used to justify a decision i
 
 ## The peeking problem
 
-Checking your A/B test dashboard every morning and stopping the moment it flips green feels responsible. It's actually one of the most reliable ways to manufacture a false positive. Each time you peek and run a significance test, you get another chance for random noise to cross the 0.05 threshold — check daily for two weeks and your real false-positive rate is well above the 5% you think you signed up for, even though every individual check used α = 0.05 correctly.
+Checking your A/B test dashboard every morning and stopping the moment it flips green feels responsible. It's actually one of the most reliable ways to manufacture a false positive. Each time you peek and run a significance test, you get another chance for random noise to cross the 0.05 threshold — check daily for two weeks and your real false-positive rate is well above the 5% you think you signed up for, even though every individual check used α = 0.05 correctly. [`../recipes/ab-test-eval/`](../recipes/ab-test-eval/) measures it on simulated A/A tests: under one specific schedule, 4.3% for a single look at the planned end and 20.9% for daily looks.
 
 The fix is deciding your sample size and/or duration in advance (previous section) and only evaluating significance once you hit it. If you genuinely need to monitor a live test, use a method built for it — sequential testing frameworks or "always-valid" p-values adjust the threshold as you go, instead of letting repeated looks quietly inflate your error rate. That's a deliberate design choice, not something you back into by checking a dashboard whenever you feel like it.
 

@@ -30,8 +30,9 @@ Clone, run, swap in your data.
 | [Cohort Retention](recipes/cohort-retention/) | pandas · SQL | Build a retention matrix + heatmap two ways, with a hidden-pattern exercise |
 | [Threads Engagement](recipes/threads-engagement/) | pandas · matplotlib | Read a content account like a product — why engagement rate misranks your best post. Runs on synthetic data, or [connect your own Threads/Meta account](recipes/threads-engagement/connect-meta.md) |
 | [Weekly Funnel](recipes/funnel-weekly/) | raw JSONL · matplotlib | Did the thing you shipped work? Rebuild a funnel from a raw event log four times — the blended weekly number says no, both device segments say yes |
+| [A/B Test Evaluation](recipes/ab-test-eval/) | scipy · matplotlib | The four checks before believing a result — sample size, validity, effect size with a CI, and what daily peeking costs (measured: 4.3% → 20.9%) |
 
-**Coming soon**: A/B test evaluation · Instrumentation starter kit
+**Coming soon**: Instrumentation starter kit
 
 ## 🔬 Case Studies — Real Apps, Real Numbers
 
@@ -55,7 +56,7 @@ Bonus: [Analytics without Google Analytics](case-studies/board-game-webapp/instr
 - [x] Threads engagement recipe (social API connector + the engagement-rate trap)
 - [x] Weekly cohort funnel recipe (internal-actor exclusion, conversion windows, a mix-shift reversal)
 - [x] Two real-service case studies
-- [ ] A/B test evaluation recipe (with sample-size calculator)
+- [x] A/B test evaluation recipe (sample-size calculator, SRM + covariate balance, measured peeking cost)
 - [ ] Instrumentation starter kit (drop-in, no-SDK event logging)
 - [ ] Claude Code plugin packaging — each recipe as an installable skill
 
