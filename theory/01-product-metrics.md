@@ -106,7 +106,7 @@ There are two ways to define WAU and MAU, and mixing them up is a common source 
 
 A rolling WAU checked on a Tuesday and a calendar WAU for the current (incomplete) week can differ meaningfully — the calendar version will look artificially low simply because the week isn't over yet. Pick one definition, label it on the chart, and don't compare a rolling number from one report against a calendar number from another.
 
-**When you'd actually use this**: if you're debugging "why does WAU look different in tool A vs. tool B," check this first — it's the single most common cause of two dashboards disagreeing on numbers computed from the same underlying events.
+**When you'd actually use this**: if you're debugging "why does WAU look different in tool A vs. tool B," check this first — it's the single most common cause of two dashboards disagreeing on numbers computed from the same underlying events. For the full set of definition choices behind any rate, and what to do when you inherit a number you can't reproduce, see [07-metric-definitions.md](07-metric-definitions.md).
 
 ## Putting it together
 

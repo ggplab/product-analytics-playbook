@@ -182,7 +182,7 @@ The general shape: any small group of unrepresentative users first seen in one p
 - **This is not an A/B test.** Before/after comparison across a period where the traffic mix also changed cannot isolate the tooltips' causal effect — the whole recipe is a demonstration of that. For the version that can, see [`theory/04-ab-testing.md`](../../theory/04-ab-testing.md).
 - **`norecord` is unmodelled loss.** 5–19% of step-1 exits have no exit event, and there's no way to know whether those users resemble the ones who did fire an event.
 - **Weekly cells are small.** 11–83 signups per device-week means roughly ±5–15pp of sampling noise on each point. That's why every conclusion here is drawn from pooled before/after cells, not individual weeks.
-- Natural follow-ups: **A/B test evaluation** (running this properly as an experiment), and a **measurement-definition guide** — how to pin down what a baseline number meant before comparing anything to it.
+- Natural follow-up: **A/B test evaluation** — running this properly as an experiment instead of a before/after. The definition choices this recipe walks through are generalized in [`theory/07-metric-definitions.md`](../../theory/07-metric-definitions.md).
 
 ## References
 

@@ -19,6 +19,7 @@ Short, practical guides. Each concept comes with "when you'd actually use this."
 | 4 | [A/B Testing & Causality](theory/04-ab-testing.md) | Running experiments that don't fool you |
 | 5 | [Statistics for PA](theory/05-statistics-for-pa.md) | Just enough stats: skewed data, significance, chi-square |
 | 6 | [ML for PA](theory/06-ml-for-pa.md) | Churn prediction, LTV, segmentation — and why you probably don't need ML yet |
+| 7 | [Metric Definitions](theory/07-metric-definitions.md) | Why the same log yields two different numbers, and how to reproduce a baseline before comparing to it |
 
 ## 🍳 Recipes — Runnable Code
 
@@ -49,13 +50,12 @@ Bonus: [Analytics without Google Analytics](case-studies/board-game-webapp/instr
 
 ## 🗺 Roadmap
 
-- [x] Theory guides 01–06
+- [x] Theory guides 01–07
 - [x] Cohort retention recipe (pandas + SQL, cross-validated)
 - [x] Threads engagement recipe (social API connector + the engagement-rate trap)
 - [x] Weekly cohort funnel recipe (internal-actor exclusion, conversion windows, a mix-shift reversal)
 - [x] Two real-service case studies
 - [ ] A/B test evaluation recipe (with sample-size calculator)
-- [ ] Measurement-definition guide — pinning down what a baseline number meant before comparing to it
 - [ ] Instrumentation starter kit (drop-in, no-SDK event logging)
 - [ ] Claude Code plugin packaging — each recipe as an installable skill
 

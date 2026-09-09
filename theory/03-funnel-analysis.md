@@ -66,7 +66,7 @@ left join events s2
 where s1.event_name = 'signed_up';
 ```
 
-**When you'd actually use this**: any time you report a conversion rate, state the window next to it. "Signup → paid: 8%" is not comparable across teams or time periods unless everyone agrees it means "within 14 days."
+**When you'd actually use this**: any time you report a conversion rate, state the window next to it. "Signup → paid: 8%" is not comparable across teams or time periods unless everyone agrees it means "within 14 days." The window is one of six choices behind any rate — the rest are in [07-metric-definitions.md](07-metric-definitions.md).
 
 ## Drop-off diagnosis
 
