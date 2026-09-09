@@ -1,6 +1,7 @@
 # CLAUDE.md
 
 유형: 상시
+부모: tech-research-hub
 
 Product analytics playbook — runnable recipes, theory guides, and real-service case studies. Conventions for AI-assisted contributions:
 
