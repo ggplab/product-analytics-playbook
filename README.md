@@ -7,7 +7,7 @@ Runnable recipes, plain-language theory, and case studies from real apps — pro
 > Building an app got easy. Understanding your users is the new bottleneck.
 > Everything here follows one rule: **it must work on your data within an hour of cloning.**
 
-Written by [BuildnWrite](https://buildnwrite.com/?utm_source=github&utm_medium=readme&utm_campaign=launch-2026q4) — notes on running this playbook on real funnels are on the blog.
+Written by [BuildnWrite](https://buildnwrite.com/?utm_source=github&utm_medium=doc&utm_campaign=launch-2026q4&utm_content=readme-top) — notes on running this playbook on real funnels are on the blog.
 
 ## 🧭 Start Here — Theory
 
